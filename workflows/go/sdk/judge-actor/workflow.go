@@ -50,6 +50,7 @@ func ContainerScanWorkflow(ctx *workflow.WorkflowContext) (any, error) {
 		return ScanResult{Succeeded: false}, err
 	}
 
+	fmt.Println("CHANGE THE PATH BELOW HERE")
 	sbom, err := os.ReadFile("/Users/chaosinthecrd/Git/dapr-quickstarts/workflows/go/sdk/judge-actor/sbom.cdx.json")
 	if err != nil {
 		return nil, err
