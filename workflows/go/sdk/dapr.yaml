@@ -2,7 +2,6 @@ version: 1
 common:
   resourcesPath: ../../components
 apps:
-  - appDirPath: ./order-processor/
-    appID: order-processor
+  - appDirPath: ./judge-actor/
+    appID: judge-actor
     command: ["go", "run", "."]
-
